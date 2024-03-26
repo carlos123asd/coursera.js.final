@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens JS</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body onload=shoot_functions()>
+
+    <main>
+        <section id="content_view" role="document" aria-labelledby="contenedor de vista" title="visualizar_img">
+            <div id="box_text" role="textbox" aria-label="instrucciones" title="contenedor_texto">
+                <h1>Imagen Seleccionada</h1>
+                <span>(Ponga el cursor por encima de la imagen que deseas visualizar)</span>
+            </div>
+        </section>
+    </main> 
+      
+    <section class="content_img" title="contenedor_imgs" aria-label="contenedor de imagenes"> <!--Error seriouse (Information AXE: Mode(best practices) 6 ERRORS tabindex, Element has a tabindex greater than 0-->
+        <img src="img/img6.jpg" alt="Dibujo de un gato" onmouseover=change_img(this) onmouseout=out_img(this) onfocus=change_img(this) onblur=out_img(this)>
+        <img src="img/img2.jpg" alt="Dibujo de un ojo" onmouseover=change_img(this) onmouseout=out_img(this) onfocus=change_img(this) onblur=out_img(this)>
+        <img src="img/img3.jpg" alt="Dibujo de una hoja de otoño" onmouseover=change_img(this) onmouseout=out_img() onfocus=change_img(this) onblur=out_img(this)>
+        <img src="img/img4.jpg" alt="Dibujo de un bosque" onmouseover=change_img(this) onmouseout=out_img(this) onfocus=change_img(this) onblur=out_img(this)>
+        <img src="img/img5.jpg" alt="Dibujo de un atardecer" onmouseover=change_img(this) onmouseout=out_img(this) onfocus=change_img(this) onblur=out_img(this)>
+        <img src="img/img1.jpg" alt="Dibujo de un lobo" onmouseover=change_img(this) onmouseout=out_img() onfocus=change_img(this) onblur=out_img(this)>
+    </section>
+
+  <script src="script/script_img.js"></script>
+</body>
+</html>
